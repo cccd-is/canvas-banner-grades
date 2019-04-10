@@ -1,0 +1,49 @@
+{
+    "port": "443",
+    "key": "",
+    "secret": "",
+    "canvasURL": "",
+    "canvasAccessToken":  "",
+    "canvasDomain": [""],
+    "banner": {
+        "user": "",
+        "password": "",
+        "connectString": "",
+        "queueTimeout": 600000,
+        "poolAlias": "banner"
+    },
+    "ssl_key": "",
+    "ssl_cert": "",
+    "cookie_secret": "",
+    "grade_table": {
+        "NC": {
+            "B": {
+                "A": "P",
+                "B": "P",
+                "C": "P",
+                "D": "NP",
+                "F": "NP"
+            }
+        },
+        "OC": {
+            "B": {
+                "A": "P",
+                "B": "P",
+                "C": "P",
+                "D": "NP",
+                "F": "NP"
+
+            },
+            "S": {
+                "A": "A",
+                "B": "B",
+                "C": "C",
+                "D": "D",
+                "F": "F"
+            }
+        }
+    },
+    "section_term_expr" : "\\d{6}$",
+    "section_crn_expr" : "^\\d{5}",
+    "reg_codes" : ["R1", "R2"]
+}
