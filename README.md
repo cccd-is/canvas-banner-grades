@@ -29,7 +29,7 @@ These instructions will get the app up and running on a test server. See deploym
 * Download and extract code 
 ``` 
 wget https://github.com/cccd-is/canvas-banner-grades/archive/v1.0.0.tar.gz
-tar xvf 1.0.0.tar.gz
+tar xvf v1.0.0.tar.gz
 ```
 or
 ```
