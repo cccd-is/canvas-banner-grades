@@ -17,8 +17,8 @@ Canvas Banner Grade Sync is a LTI app that can be used to save final grades from
 * App can be hosted on a server with these confiugrations. Linux is recomended to host the app and instructions largely follow Linux convensions.
     * Accepts secure internet connections using a domain name and a valid SSL/TLS certificate.
     * Access to Banner database for SQL queries if database is behind firewall including credentials with following grants
-    * Read grants on tables sirasgn, spriden, sfrstcr, ssbsect and sobptrm 
-    * Execution grant on baninst1.sp_grading.p_post_grade
+        * Read grants on tables sirasgn, spriden, sfrstcr, ssbsect and sobptrm 
+        * Execution grant on baninst1.sp_grading.p_post_grade
     * Access token from a Canvas admin profile with account permissions to read grades, users, sections and courses.
 
 
@@ -42,6 +42,12 @@ git clone https://github.com/cccd-is/canvas-banner-grades.git
 * Install dependencies
 ```
 npm install  
+```
+* Fix for SameSite=None cookie attribue introduced in [Chrome 80 Feb 2020]. Published libraries dont support it yet so this temporary workaround is needed. 
+``` 
+cd node_modules/client-sessions
+npm install cookies@0.8.0
+cd ../..
 ```
 * Buid App
 ``` 

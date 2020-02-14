@@ -21,9 +21,13 @@ app.use(session({
     secret: lti_config.cookie_secret,
     duration: 120 * 60 * 1000,
     activeDuration: 5 * 60 * 1000,
-    httpOnly: true,
-    secure: true,
-    ephemeral: true
+    cookie:{
+	path : '/',
+	ephemeral : true,
+        httpOnly : true,
+	secure : true,
+        sameSite : 'none'
+    }
 }));
 var ssl_options = {
     key: fs.readFileSync(lti_config.ssl_key),
