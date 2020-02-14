@@ -28,8 +28,8 @@ These instructions will get the app up and running on a test server. See deploym
 * Install node-oracledb using the [Quick Start Node-oracledb](https://oracle.github.io/node-oracledb/INSTALL.html#quickstart)
 * Download and extract code 
 ``` 
-wget https://github.com/cccd-is/canvas-banner-grades/archive/v1.0.0.tar.gz
-tar xvf v1.0.0.tar.gz
+wget https://github.com/cccd-is/canvas-banner-grades/archive/v1.1.0.tar.gz
+tar xvf v1.1.0.tar.gz
 ```
 or
 ```
@@ -37,7 +37,7 @@ git clone https://github.com/cccd-is/canvas-banner-grades.git
 
 ```
 
-* **cd** into **canvas-banner-grades-1.0.0** directory.
+* **cd** into **canvas-banner-grades-1.1.0** directory.
 * [Configure Settings](#configure-settings) 
 * Install dependencies
 ```
